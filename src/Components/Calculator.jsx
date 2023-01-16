@@ -130,12 +130,13 @@ export default function Calculator() {
   }
   useEffect(() => {
     const ps = [
-      {'playerName':'VIRAT KOHLI 1',
+      {'playerName':'Virat Kohli',
     'playerImg':'Virat Kohli.png',
     'btnRequired':true,
     'flagImg':'india.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'#1A00FF',
+    'color2':'#8196F9',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -147,12 +148,13 @@ export default function Calculator() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 2',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Devon Conway',
+    'playerImg':'Devon Conway.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'nz.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'black',
+    'color2':'gray',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -164,12 +166,13 @@ export default function Calculator() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 3',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Alex Hales',
+    'playerImg':'Alex Hales.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'england.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'orange',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -181,12 +184,13 @@ export default function Calculator() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 4',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Faf du Plessis',
+    'playerImg':'Faf du Plessis.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'sa.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'green',
+    'color2':'yellow',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -197,12 +201,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"batsman"},{'playerName':'VIRAT KOHLI 5',
-    'playerImg':'Virat Kohli.png',
+    'type':"batsman"},{'playerName':'Josh Hazlewood',
+    'playerImg':'Josh Hazlewood.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'australia.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'yellow',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -213,12 +218,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 6',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Mustafizur Rahman',
+    'playerImg':'Mustafizur Rahman.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'bangladesh.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'green',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -229,12 +235,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 7',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Fazalhaq Farooqi',
+    'playerImg':'Fazalhaq Farooqi.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'afghanistan.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'red',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -245,12 +252,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 8',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Joshua Little',
+    'playerImg':'Joshua Little.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'ireland.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'lightgreen',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -261,12 +269,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 9',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Sikander Raza',
+    'playerImg':'Sikander Raza.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'zimbabwe.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'yellow',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -277,12 +286,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"all rounder"},{'playerName':'VIRAT KOHLI 10',
-    'playerImg':'Virat Kohli.png',
+    'type':"all rounder"},{'playerName':'Roelof van der Merwe',
+    'playerImg':'Roelof van der Merwe.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'netherlands.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'blue',
+    'color2':'orangered',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -293,12 +303,13 @@ export default function Calculator() {
       'mo':0,
       'dth':0
     },
-    'type':"all rounder"},{'playerName':'VIRAT KOHLI 11',
-    'playerImg':'Virat Kohli.png',
+    'type':"all rounder"},{'playerName':'Hayley Matthews',
+    'playerImg':'Hayley Matthews.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'wi.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'maroon',
+    'color2':'crimson',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -326,8 +337,8 @@ export default function Calculator() {
             <button onClick={submit}>Submit</button>
           </div>
           <div className="player-type-buttons">
-            <button onClick={()=>{setIsBat(true)}}><img src={require('../media/bat.png')} alt="" /></button>
-            <button onClick={()=>{setIsBat(false)}}><img src={require('../media/ball.png')} alt="" /></button>
+            <button onClick={()=>{setIsBat(true)}}><img src='/media/bat.png' alt="" /></button>
+            <button onClick={()=>{setIsBat(false)}}><img src='/media/ball.png' alt="" /></button>
           </div>
         </div>
         <div className='calculator-player-container'>
@@ -339,7 +350,7 @@ export default function Calculator() {
                 <p>PPL:</p>
                 {
                   batPPL.map((player,i)=>{
-                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <button className='remove-button' onClick={()=>{remove(player,'ppl')}}>Remove</button>
                     </div>
                   })
@@ -349,7 +360,7 @@ export default function Calculator() {
                 <p>MO:</p>
                 {
                   batMO.map((player,i)=>{
-                    return<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} />
+                    return<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} />
                     <button className='remove-button' onClick={()=>{remove(player,'mo')}}>Remove</button>
                     </div>
                   })
@@ -359,7 +370,7 @@ export default function Calculator() {
                 <p>DTH:</p>
                 {
                   batDTH.map((player,i)=>{
-                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <button className='remove-button' onClick={()=>{remove(player,'dth')}}>Remove</button>
                     </div>
                   })
@@ -373,7 +384,7 @@ export default function Calculator() {
                 <p>PPL:</p>
                 {
                   bowlPPL.map((player,i)=>{
-                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <button className='remove-button' onClick={()=>{remove(player,'ppl')}}>Remove</button>
                     </div>
                   })
@@ -383,7 +394,7 @@ export default function Calculator() {
                 <p>MO:</p>
                 {
                   bowlMO.map((player,i)=>{
-                    return<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} />
+                    return<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} />
                     <button className='remove-button' onClick={()=>{remove(player,'mo')}}>Remove</button>
                     </div>
                   })
@@ -393,7 +404,7 @@ export default function Calculator() {
                 <p>DTH:</p>
                 {
                   bowlDTH.map((player,i)=>{
-                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                    return <div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <button className='remove-button' onClick={()=>{remove(player,'dth')}}>Remove</button>
                     </div>
                   })
@@ -406,13 +417,13 @@ export default function Calculator() {
               <div className="calculator-individual-team-player-container" id="scrollable-div">
                 {
                   teamPlayers.map((player,i)=>{
-                   return isBat?(player.type.toLowerCase()==="batsman"||player.type.toLowerCase()==="all rounder"?<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                   return isBat?(player.type.toLowerCase()==="batsman"||player.type.toLowerCase()==="all rounder"?<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <div className='calculator-card-buttons-container'>
                       <button className='calculator-card-buttons' onClick={()=>{set(player,'ppl')}} style={{borderRadius:'0px 0px 0px 20px'}}>PPL</button>
                       <button className='calculator-card-buttons' onClick={()=>{set(player,'mo')}}>MO</button>
                       <button className='calculator-card-buttons' onClick={()=>{set(player,'dth')}} style={{borderRadius:'0px 0px 20px 0px'}}>DTH</button>
                       </div>
-                   </div>:''):(player.type.toLowerCase()==="bowler"||player.type.toLowerCase()==="all rounder"?<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                   </div>:''):(player.type.toLowerCase()==="bowler"||player.type.toLowerCase()==="all rounder"?<div className='modifiedCard'><Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={true} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                     <div className='calculator-card-buttons-container'>
                       <button className='calculator-card-buttons' onClick={()=>{set(player,'ppl')}} style={{borderRadius:'0px 0px 0px 20px'}}>PPL</button>
                       <button className='calculator-card-buttons' onClick={()=>{set(player,'mo')}}>MO</button>

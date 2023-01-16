@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/Card.css'
-export default function CardBack({batStat,bowlStat,color,flip,scale,btnRequired}) {
+export default function CardBack({batStat,bowlStat,color1,color2,flip,scale,btnRequired}) {
     let gradient = {
-        'background':`linear-gradient(to bottom  , ${color} ,white)`
+        'background':`linear-gradient(to bottom right  , ${color1},${color2} )`
     };
     const b = {
         'borderRadius': "30px 30px 0px 0px"

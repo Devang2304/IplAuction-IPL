@@ -25,7 +25,7 @@ export default function Powercard({name,isUsed}) {
   return (
     <div className='powercard' >
         <Tooltip title={<h1>{p.name.charAt(0).toUpperCase()+p.name.slice(1)}:<br />{ p.desc}</h1>} followCursor>
-            <img src={require(`../media/powercards/${p.name}.jpg`)} style={!isUsed?{}:{'filter':'grayscale(100%)'}} alt="" />
+            <img src={`media/powercards/${p.name}.jpg`} style={!isUsed?{}:{'filter':'grayscale(100%)'}} alt="" />
         </Tooltip>       
     </div>    
   )

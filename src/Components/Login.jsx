@@ -14,7 +14,7 @@ export default function Login() {
   return (
     <div className="LandingPage">
       <div className="image-container">
-        <img className='image'src={require("../media/logo.png")} alt="" />
+        <img className='image' src="../media/logo.png" alt="" />
       </div>
       <div>
         <span className="Name">

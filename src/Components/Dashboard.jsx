@@ -6,19 +6,20 @@ import Navbar from './Navbar'
 import Powercard from './Powercard'
 export default function Dashboard() {
   const [teamLogo, setTeamLogo] = useState('csk.png')
-  const [budget, setBudget] = useState('')
+  const [budget, setBudget] = useState("")
   const [powercards, setPowercards] = useState([])
   const [players, setPlayers] = useState([])
   useEffect(() => {
     let logo = "rcb.png" 
     
     const ps = [
-      {'playerName':'KL Rahul',
-    'playerImg':'KL Rahul.png',
+      {'playerName':'Virat Kohli',
+    'playerImg':'Virat Kohli.png',
     'btnRequired':true,
     'flagImg':'india.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'#1A00FF',
+    'color2':'#8196F9',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -30,12 +31,13 @@ export default function Dashboard() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 2',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Devon Conway',
+    'playerImg':'Devon Conway.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'nz.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'black',
+    'color2':'gray',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -47,12 +49,13 @@ export default function Dashboard() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 3',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Alex Hales',
+    'playerImg':'Alex Hales.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'england.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'orange',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -64,12 +67,13 @@ export default function Dashboard() {
       'dth':0
     },
     'type':"batsman"},
-    {'playerName':'VIRAT KOHLI 4',
-    'playerImg':'Virat Kohli.png',
+    {'playerName':'Faf du Plessis',
+    'playerImg':'Faf du Plessis.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'sa.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'green',
+    'color2':'yellow',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -80,12 +84,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"batsman"},{'playerName':'VIRAT KOHLI 5',
-    'playerImg':'Virat Kohli.png',
+    'type':"batsman"},{'playerName':'Josh Hazlewood',
+    'playerImg':'Josh Hazlewood.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'australia.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'yellow',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -96,12 +101,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 6',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Mustafizur Rahman',
+    'playerImg':'Mustafizur Rahman.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'bangladesh.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'green',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -112,12 +118,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 7',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Fazalhaq Farooqi',
+    'playerImg':'Fazalhaq Farooqi.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'afghanistan.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'red',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -128,12 +135,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 8',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Joshua Little',
+    'playerImg':'Joshua Little.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'ireland.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'lightgreen',
+    'color2':'black',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -144,12 +152,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"bowler"},{'playerName':'VIRAT KOHLI 9',
-    'playerImg':'Virat Kohli.png',
+    'type':"bowler"},{'playerName':'Sikander Raza',
+    'playerImg':'Sikander Raza.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'zimbabwe.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'yellow',
+    'color2':'red',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -160,12 +169,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"all rounder"},{'playerName':'VIRAT KOHLI 10',
-    'playerImg':'Virat Kohli.png',
+    'type':"all rounder"},{'playerName':'Roelof van der Merwe',
+    'playerImg':'Roelof van der Merwe.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'netherlands.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'blue',
+    'color2':'orangered',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -176,12 +186,13 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"all rounder"},{'playerName':'VIRAT KOHLI 11',
-    'playerImg':'Virat Kohli.png',
+    'type':"all rounder"},{'playerName':'Hayley Matthews',
+    'playerImg':'Hayley Matthews.png',
     'btnRequired':true,
-    'flagImg':'india.png',
+    'flagImg':'wi.png',
     'basePrice':10000000,
-    'color':'blue',
+    'color1':'maroon',
+    'color2':'crimson',
     'batStat':{
       'ppl':9,
       'mo':10,
@@ -222,7 +233,7 @@ export default function Dashboard() {
     <div className='dashboard'>
         <div className='team-container'>
           <div className='team-details'>
-            <div className='team-logo'><img src={require(`../media/teamlogo/${teamLogo}`)} alt="" /></div>
+            <div className='team-logo'><img src={`media/teamlogo/${teamLogo}`} alt="" /></div>
             <span className='budget'>Current budget:<br/> {convert(budget)} </span>
           </div>
           
@@ -246,8 +257,8 @@ export default function Dashboard() {
                   {
                     players.map((player,i)=>{
                       return player.type.toLowerCase() === "batsman"?
-                      <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
-                      : ''
+                      <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'#1A00FF'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  color2={player?.color2?player.color2:'#1A00FF'} />
+                      : ""
                     })
                   }</div>
                 </div>
@@ -257,8 +268,8 @@ export default function Dashboard() {
                   {
                     players.map((player,i)=>{
                       return player.type.toLowerCase() === "bowler"?
-                         <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
-                         : ''
+                         <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'#1A00FF'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} color2={player?.color2?player.color2:'#1A00FF'} />
+                         : ""
                     })
                   }</div>
                 </div>
@@ -268,8 +279,8 @@ export default function Dashboard() {
                 {
                   players.map((player,i)=>{
                     return player.type.toLowerCase() === "all rounder"?
-                    <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
-                        : ''
+                    <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'#1A00FF'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}} color2={player?.color2?player.color2:'#1A00FF'}  />
+                        : ""
                   })
                   
                 }</div>

@@ -16,12 +16,13 @@ export default function OtherTeams() {
       let logo = `${teamName}.png` 
       
       const ps = [
-        {'playerName':'Rohit Sharma',
-      'playerImg':'Rohit Sharma.png',
+        {'playerName':'Virat Kohli',
+      'playerImg':'Virat Kohli.png',
       'btnRequired':true,
       'flagImg':'india.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'#1A00FF',
+      'color2':'#8196F9',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -33,12 +34,13 @@ export default function OtherTeams() {
         'dth':0
       },
       'type':"batsman"},
-      {'playerName':'VIRAT KOHLI',
-      'playerImg':'Virat Kohli.png',
+      {'playerName':'Devon Conway',
+      'playerImg':'Devon Conway.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'nz.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'black',
+      'color2':'gray',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -50,12 +52,13 @@ export default function OtherTeams() {
         'dth':0
       },
       'type':"batsman"},
-      {'playerName':'Suryakumar Yadav',
-      'playerImg':'Suryakumar Yadav.png',
+      {'playerName':'Alex Hales',
+      'playerImg':'Alex Hales.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'england.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'orange',
+      'color2':'red',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -67,12 +70,13 @@ export default function OtherTeams() {
         'dth':0
       },
       'type':"batsman"},
-      {'playerName':'VIRAT KOHLI 4',
-      'playerImg':'Virat Kohli.png',
+      {'playerName':'Faf du Plessis',
+      'playerImg':'Faf du Plessis.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'sa.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'green',
+      'color2':'yellow',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -83,12 +87,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"batsman"},{'playerName':'VIRAT KOHLI 5',
-      'playerImg':'Virat Kohli.png',
+      'type':"batsman"},{'playerName':'Josh Hazlewood',
+      'playerImg':'Josh Hazlewood.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'australia.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'yellow',
+      'color2':'black',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -99,12 +104,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"bowler"},{'playerName':'VIRAT KOHLI 6',
-      'playerImg':'Virat Kohli.png',
+      'type':"bowler"},{'playerName':'Mustafizur Rahman',
+      'playerImg':'Mustafizur Rahman.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'bangladesh.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'green',
+      'color2':'red',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -115,12 +121,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"bowler"},{'playerName':'VIRAT KOHLI 7',
-      'playerImg':'Virat Kohli.png',
+      'type':"bowler"},{'playerName':'Fazalhaq Farooqi',
+      'playerImg':'Fazalhaq Farooqi.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'afghanistan.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'red',
+      'color2':'black',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -131,12 +138,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"bowler"},{'playerName':'VIRAT KOHLI 8',
-      'playerImg':'Virat Kohli.png',
+      'type':"bowler"},{'playerName':'Joshua Little',
+      'playerImg':'Joshua Little.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'ireland.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'lightgreen',
+      'color2':'black',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -147,12 +155,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"bowler"},{'playerName':'VIRAT KOHLI 9',
-      'playerImg':'Virat Kohli.png',
+      'type':"bowler"},{'playerName':'Sikander Raza',
+      'playerImg':'Sikander Raza.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'zimbabwe.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'yellow',
+      'color2':'red',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -163,12 +172,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"all rounder"},{'playerName':'VIRAT KOHLI 10',
-      'playerImg':'Virat Kohli.png',
+      'type':"all rounder"},{'playerName':'Roelof Merwe',
+      'playerImg':'Roelof Merwe.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'netherlands.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'blue',
+      'color2':'orangered',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -179,12 +189,13 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"all rounder"},{'playerName':'VIRAT KOHLI 11',
-      'playerImg':'Virat Kohli.png',
+      'type':"all rounder"},{'playerName':'Hayley Matthews',
+      'playerImg':'Hayley Matthews.png',
       'btnRequired':true,
-      'flagImg':'india.png',
+      'flagImg':'wi.png',
       'basePrice':10000000,
-      'color':'blue',
+      'color1':'maroon',
+      'color2':'crimson',
       'batStat':{
         'ppl':9,
         'mo':10,
@@ -225,7 +236,7 @@ export default function OtherTeams() {
       <div className='dashboard'>
           <div className='team-container'>
             <div className='team-details'>
-              <div className='team-logo'><img src={teamLogo?require(`../media/teamlogo/${teamLogo}`):require("../media/teamlogo/no.png")} alt=""/></div>
+              <div className='team-logo'><img src={teamLogo?`media/teamlogo/${teamLogo}`:"media/teamlogo/no.png"} alt=""/></div>
               <span className='budget'>Current budget:<br/> {convert(budget)} </span>
             </div>
             

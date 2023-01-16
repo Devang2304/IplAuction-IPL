@@ -1,17 +1,17 @@
 .powercard{
     height: 9vw;
     width: 9vw;
-    border: 5px white solid;
     border-radius: 16px;
     display: flex;
     justify-content: center;
+    border: 5px white solid;
     align-items: center;
 }
 
 .powercard img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 16px;
-    max-height: 100%;
+    height: 100%;
 }
 .powercard .powercard-details{
     visibility: hidden;

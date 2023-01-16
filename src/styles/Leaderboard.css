@@ -1,6 +1,8 @@
 .leaderboard{
-    background-color: #040112;
     color: white;
+    background-image: url(/public/media/pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .Leaderboard-span{

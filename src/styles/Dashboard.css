@@ -2,6 +2,9 @@
     height: 92vh;
     display: flex;
     width: 100%;
+    background-image: url(/public/media/pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .team-container{
     height: 100%;
@@ -18,7 +21,6 @@
 
     font-size: 1.5vw;
     flex-direction: column;
-    background-color: #040112;
 }
 .player-container{
     display: flex;
@@ -30,6 +32,9 @@
 }
 .player-container::-webkit-scrollbar{
     width: 5px;
+}
+.player-container::-webkit-scrollbar-thumb{
+    background-color: #06021b;
 }
 .player-container::-webkit-scrollbar-track{
     width: 5px;
@@ -64,7 +69,6 @@
 
 .team-details,.powercards{
     height: 50%;
-    background-color: #040112;
     gap: 2rem;
     align-items: center;
     justify-content: center;

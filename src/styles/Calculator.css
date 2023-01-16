@@ -1,6 +1,8 @@
 .calculator{
     min-height: 92vh;
-    background-color: #040112;
+    background-image: url(/public/media/pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .calculator-container{
     height: 12vh;

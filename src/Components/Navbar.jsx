@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav>
         <div className='nav1'>
             <div className="logo">
-                <Link to="/dashboard"><img src={require('../media/logo.jpg')} alt="" /></Link>
+                <Link to="/dashboard"><img src='media/logo.jpg' alt="" /></Link>
             </div>
             
             <span>

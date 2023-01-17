@@ -30,7 +30,9 @@ export default function Dashboard() {
       'mo':0,
       'dth':0
     },
-    'type':"batsman"},
+    'type':"batsman"
+  
+  },
     {'playerName':'Devon Conway',
     'playerImg':'Devon Conway.png',
     'btnRequired':true,

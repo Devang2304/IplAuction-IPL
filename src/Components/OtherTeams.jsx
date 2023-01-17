@@ -33,7 +33,9 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"batsman"},
+      'type':"batsman"
+    
+    },
       {'playerName':'Devon Conway',
       'playerImg':'Devon Conway.png',
       'btnRequired':true,
@@ -172,8 +174,8 @@ export default function OtherTeams() {
         'mo':0,
         'dth':0
       },
-      'type':"all rounder"},{'playerName':'Roelof Merwe',
-      'playerImg':'Roelof Merwe.png',
+      'type':"all rounder"},{'playerName':'Roelof van der Merwe',
+      'playerImg':'Roelof van der Merwe.png',
       'btnRequired':true,
       'flagImg':'netherlands.png',
       'basePrice':10000000,
@@ -236,7 +238,7 @@ export default function OtherTeams() {
       <div className='dashboard'>
           <div className='team-container'>
             <div className='team-details'>
-              <div className='team-logo'><img src={teamLogo?`media/teamlogo/${teamLogo}`:"media/teamlogo/no.png"} alt=""/></div>
+              <div className='team-logo'><img src={teamLogo?`/media/teamlogo/${teamLogo}`:"/media/teamlogo/no.png"} alt=""/></div>
               <span className='budget'>Current budget:<br/> {convert(budget)} </span>
             </div>
             
@@ -260,7 +262,7 @@ export default function OtherTeams() {
                     {
                       players.map((player,i)=>{
                         return player.type.toLowerCase() === "batsman"?
-                        <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                        <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                         : ''
                       })
                     }</div>
@@ -271,7 +273,7 @@ export default function OtherTeams() {
                     {
                       players.map((player,i)=>{
                         return player.type.toLowerCase() === "bowler"?
-                           <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                           <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                            : ''
                       })
                     }</div>
@@ -282,7 +284,7 @@ export default function OtherTeams() {
                   {
                     players.map((player,i)=>{
                       return player.type.toLowerCase() === "all rounder"?
-                      <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color={player?.color?player.color:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
+                      <Card key={i} playerName={player?.playerName?player.playerName:""} playerImg ={player?.playerImg?player.playerImg:"no.png"} btnRequired={false} flagImg = {player?.flagImg?player.flagImg:"no.png"} basePrice = {player?.basePrice?player.basePrice:0} color1={player?.color1?player.color1:'blue'} color2={player?.color2?player.color2:'blue'} scale={{'transform':'scale(0.5)'}} batStat={player?.batStat?player.batStat:{'ppl':0,'mo':0,'dth':0}} bowlStat={player?.bowlStat?player.bowlStat:{'ppl':0,'mo':0,'dth':0}}  />
                           : ''
                     })
                     

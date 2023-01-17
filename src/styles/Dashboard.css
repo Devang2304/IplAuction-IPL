@@ -68,7 +68,7 @@
 }
 
 .team-details,.powercards{
-    height: 50%;
+    height: 45%;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,9 @@
     font-size: 2.5vw;
     width: 100%;
 }
-
+.powercards{
+    height: 55%;
+}
 .powercards span{
     font-size: 2vw;
     height: 10%;

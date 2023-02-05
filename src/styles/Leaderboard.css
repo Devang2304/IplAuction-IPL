@@ -3,6 +3,7 @@
     background-image: url(/public/media/pattern.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 92vh;
 
 }
 .Leaderboard-span{

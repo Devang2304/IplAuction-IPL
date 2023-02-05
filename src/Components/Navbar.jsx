@@ -49,7 +49,7 @@ export default function Navbar() {
                 <div className='sidebar-team-names' >Other Teams</div>
                 {
                     teams.map((t,i)=>{
-                        return <Link className='sidebar-team-names' key={i} to={`/otherteams/${t}`}  ><img src={`media/teamlogo/${t.toLowerCase()}.png`}/>{t}</Link>
+                        return <Link className='sidebar-team-names' key={i} to={`/otherteams/${t}`}  ><img src={`/media/teamlogo/${t.toLowerCase()}.png`}/>{t}</Link>
                     })
                 }
             </div>

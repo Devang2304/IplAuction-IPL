@@ -44,7 +44,7 @@ export default function Leaderboard() {
              return <div className='leaderboard-team-container' key={id} style={(id===0||id===1||id===2)?styles[id]:{}}> 
                   <WorkspacePremiumIcon style={{fontSize:40}} />
                 <div  className='leaderboard-team-details'>
-                <div>{team.teamName}</div>
+                <div>{team.name}</div>
                 <div>{team.score}</div></div>
               </div>
             })

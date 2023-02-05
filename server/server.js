@@ -10,6 +10,7 @@ const throwError = require("./Error")
 const ErrorHandler = require("./ErrorHandler");
 const { json } = require('express');
 
+
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
@@ -79,6 +80,34 @@ app.put("/score/:name",async(req,res,next)=>{
             message:"Score Updated Successfully"
         })
     }catch(error){
+        next(new ErrorHandler())
+    }
+})
+
+//Flitering players
+app.get("/players",async(req,res,next)=>{
+    try{
+        let players = []
+        const playerName = req.query.playerName ? {
+                                    $regex: req.query.playerName,
+                                    $options: 'i'
+                                }:
+                                null
+        const type = req.query.type ? req.query.type : null
+        if(!playerName && !type){
+            players = await Players.find()
+        }else if(playerName && !type){
+            players = await Players.find({playerName:playerName})
+        }else if(!playerName && type){
+            players = await Players.find({type:type})
+        }else{
+            players = await Players.find({playerName,type})
+        }
+        res.status(200).json({
+            success:true,
+            players
+        })
+    }catch(err){
         next(new ErrorHandler())
     }
 })

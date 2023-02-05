@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
 
-const CONNECTION_URL = 'mongodb://127.0.0.1:27017/Ipl';
+const CONNECTION_URL = 'mongodb+srv://DEVANG23:sGS9G3qDgNVQztE@cluster0.ngb8lfk.mongodb.net/test_project';
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true,family: 4})
 .then(()=>{
